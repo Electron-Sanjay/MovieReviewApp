@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Review App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Movie Review App</h1>
+    </header>
+    
+    <main>
+        <section id="movie-list">
+            <h2>Movies</h2>
+            <div id="movies-container"></div>
+        </section>
+
+        <section id="movie-details" class="hidden">
+            <h2 id="movie-title"></h2>
+            <p id="movie-description"></p>
+            <div id="trailer-container"></div>
+            <h3>Reviews</h3>
+            <div id="reviews-container"></div>
+            <button id="add-review-btn">Add Review</button>
+        </section>
+
+        <section id="review-form" class="hidden">
+            <h2>Add Review</h2>
+            <form id="new-review-form">
+                <label for="review-text">Your Review:</label>
+                <textarea id="review-text" required></textarea>
+                <button type="submit">Submit Review</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
